@@ -1,0 +1,40 @@
+.feature-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * $card-set-gap);
+  
+      & > &__item {
+          flex-basis: calc(100% / 4 - $card-set-gap);
+          margin-right: $card-set-gap;
+      }
+  
+      &__icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 270px;
+          height: 120px;
+          background-color: $bg-light;
+          border-radius: 4px;
+      
+          margin-bottom: 30px;
+      }
+      
+      &__title {
+          line-height: 1.14;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+      
+          color: $main-color;
+      
+          margin-bottom: 10px;
+      }
+      
+      &__text {
+          line-height: 1.71;
+          letter-spacing: 0.03em;
+      
+          color: $secondary-color;
+      }
+  }
+  

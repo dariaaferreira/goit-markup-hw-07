@@ -1,0 +1,139 @@
+.logofooter {
+    color: $white-color;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    font-family: $secondary-font;
+}
+
+.footer {
+    background-color: $bg-dark;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+
+    &-contacts {
+        margin-top: 20px;
+    }
+
+    &-item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    
+    &-items a {
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.03em; 
+    }
+    
+    &-items a:hover, &-items a:focus {
+        color: $active-color;
+        transition: color 250ms $timing-function;
+    }
+    
+    &-address {
+        color: $white-color;
+    }
+    
+    &-contact {
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+    &-container {
+        display: flex;  
+    }
+    
+    &-main {
+        margin-right: 70px;
+    }
+    
+    &__title {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    
+        color: $white-color;
+    } 
+}
+
+.subscribe {
+    font-weight: 700;
+}
+
+.footer-social {
+    padding-top: 12px;
+
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+    }
+    
+    &__item:not(:last-child) {
+        margin-right: 10px; 
+    }
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        fill: $white-color;
+        border-radius: 50%;
+    }
+    
+    &__link:hover,
+    &__link:focus {
+        fill: $white-color;
+        background-color: $active-color;
+        transition: background-color 250ms $timing-function;
+    } 
+}
+
+.footer-subscribe {
+    margin-left: auto;
+    padding-top: 12px;
+
+    &__icon {
+        position: absolute;
+        bottom: 13px;
+        right: 28px;
+    
+        fill: $white-color;
+    }
+}
+
+.input-subscribe {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 16px 15px;
+
+    font-size: 16px;
+    line-height: 1.2;
+    color: $white-color;
+
+    &:focus {
+        border-color: $active-color; 
+        transition: border 250ms $timing-function;
+    }
+    
+    &:focus-visible {
+        outline: 0px;
+    }
+}
