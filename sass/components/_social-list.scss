@@ -13,6 +13,7 @@
         fill: $client-icon-color;
     
         border-radius: 50%;
+        transition: fill 250ms $timing-function, background-color 250ms $timing-function;
     }
     
     &__item:not(:last-child) {
@@ -23,6 +24,5 @@
     &__link:focus {
         fill: $white-color;
         background-color: $active-color;
-        transition: fill 250ms $timing-function, background-color 250ms $timing-function;
     } 
 }

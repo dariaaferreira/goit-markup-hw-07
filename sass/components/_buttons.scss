@@ -15,12 +15,12 @@
     border-style: none;
 
     margin-top: 30px;
+    transition: background-color 250ms $timing-function, box-shadow 250ms $timing-function;
 
     &:hover, &:focus  {
         cursor: pointer;
         background-color: $bg-color-btn;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        transition: background-color 250ms $timing-function, box-shadow 250ms $timing-function;
     }
 }
 
@@ -49,6 +49,7 @@
     background: $bg-light;
     border-radius: 4px;
     border-style: none;
+    transition: background-color 250ms $timing-function, color 250ms $timing-function, border 250ms $timing-function, box-shadow 250ms $timing-function;
 
     &:hover, &:focus {
         cursor: pointer;
@@ -56,7 +57,6 @@
         color: $white-color;
     
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        transition: background-color 250ms $timing-function, color 250ms $timing-function, border 250ms $timing-function, box-shadow 250ms $timing-function;
     }
 }
 
@@ -82,10 +82,10 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: inherit;
+    transition: background-color 250ms $timing-function, box-shadow 250ms $timing-function;
 
     &:hover, &:focus {
         cursor: pointer;
         background-color: #188CE8;
-        transition: background-color 250ms $timing-function, box-shadow 250ms $timing-function;
     }
 }
